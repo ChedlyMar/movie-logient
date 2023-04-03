@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* LABELS */
+.label {
+  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
+
+/* INPUT */
+.input-group {
+  @apply my-4;
+}
+.input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+/* BUTTON */
+.btn {
+  @apply font-bold py-2 px-4 ml-2 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+/* NAVBAR */
+.router-link-active {
+  @apply block py-2 pl-3 pr-4 rounded bg-transparent text-blue-700;
+}
+
+.deactivated-link {
+  @apply block py-2 pl-3 pr-4 rounded text-gray-900  hover:text-blue-700;
+}
