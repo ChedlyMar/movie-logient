@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import Navbar from "@/components/navbar.vue";
 </script>
 
 <template>
-  <h2 class="text-3xl">movie app works!</h2>
+  <Navbar class="sticky top-0" />
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped>
